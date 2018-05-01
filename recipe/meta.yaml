@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/praise/praise_{{ version }}.tar.gz
   sha256: 5c035e74fd05dfa59b03afe0d5f4c53fbf34144e175e90c53d09c6baedf5debd
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
